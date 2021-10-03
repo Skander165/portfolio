@@ -1,9 +1,7 @@
 import "./portfolio.scss";
 // import PortfolioList from "../portfolioList/PortfolioList";
 // import { useState, useEffect } from "react";
-import {
-  portfolio
-} from "../../data";
+import { portfolio } from "../../data";
 
 export default function Portfolio() {
   // const [selected, setSelected] = useState("featured");
@@ -47,7 +45,10 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
+      <div className="portfolioText">
+        <h1>Portfolio</h1>
+        <span>Here's a sample..</span>
+      </div>
       {/* <ul>
         {list.map((item) => (
           <PortfolioList
