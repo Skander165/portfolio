@@ -33,7 +33,7 @@ export default function About() {
               I'm Skander and I'm a <span ref={textRef}></span>
             </h2>
             <p>
-              I'm Skander, 20 years old, and I'm a student in the high institute
+              I'm Skander, 20 years old, and I'm a student at the high institute
               of computer science in Tunis. I am only one year away from
               obtaining my bachelor degree in Computer Science. My academic
               journey helped me broaden my knowledge and experience in IT, But I
