@@ -1,0 +1,26 @@
+@import "../../global.scss";
+
+.footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  justify-content: center;
+  pre {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    word-spacing: 4px;
+
+    @include tab{
+        word-spacing: initial;
+        font-size: 14px;
+    }
+
+    span {
+      color: crimson;
+    }
+  }
+}

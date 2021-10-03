@@ -1,0 +1,132 @@
+@import "../../global.scss";
+
+.topbar {
+
+  width: 100%;
+  height: 90px;
+  background-color: #f0f2f5;
+  color: $mainColor;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  transition: all 1s ease;
+  overflow: hidden;
+
+  &.scrolled{
+    background-color: white;
+  }
+
+  .wrapper {
+    padding: 5px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @include mobile {
+      justify-content: space-between;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      flex: 2.5;
+      justify-content: center;
+
+      @include mobile {
+        flex: none;
+        
+      }
+
+      .logo {
+        font-size: 35px;
+        font-weight: 700;
+        text-decoration: none;
+        color: inherit;
+        margin-right: 40px;
+
+        @include mobile {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .right {
+      flex: 5;
+
+      @include mobile {
+        flex: none;
+      }
+      .items {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        a{
+          font-size: inherit;
+          text-decoration: none;
+          color: inherit;
+      }
+
+        @include mobile {
+          display: none;
+        }
+
+        
+        .item{
+          font-size: 20px;
+          font-weight: 600;
+          cursor: pointer;
+
+          &:hover{
+            color: crimson;
+          }
+        }
+      }
+
+      .hamburger {
+        display: none;
+        width: 32px;
+        height: 25px;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+
+        @include mobile {
+          display: flex;
+          
+        }
+
+        span {
+          width: 100%;
+          height: 3px;
+          background-color: $mainColor;
+          transform-origin: left;
+          transition: all 2s ease;
+        }
+      }
+    }
+  }
+
+  &.active {
+    background-color: $mainColor;
+    color: white;
+
+    .hamburger {
+      span {
+        &:first-child {
+          background-color: white;
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:last-child {
+          background-color: white;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}

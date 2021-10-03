@@ -1,0 +1,16 @@
+.app{
+    height: 100vh;
+
+    .sections{
+        width: 100%;
+        height: calc(100vh - 90px);
+        position: relative;
+        top: 90px;
+        scroll-behavior: smooth;
+
+        > *{
+            width: 100vw;
+            scroll-snap-align: start;
+        }
+    }
+}

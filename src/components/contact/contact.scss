@@ -1,0 +1,98 @@
+@import "../../global.scss";
+
+.contact {
+  background-color: white;
+  display: flex;
+  height: 550px;
+
+  @include tab {
+    flex-direction: column;
+  }
+
+  .left {
+    flex: 1;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+    }
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .links {
+      width: 400px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 20px;
+
+      @include tab {
+        width: 300px;
+        height: 150px;
+      }
+
+      .link {
+        display: flex;
+        align-items: center;
+
+        .linkIcon {
+          font-size: 50px !important;
+          margin-right: 20px;
+          margin-bottom: 10px;
+          color: crimson;
+
+          @include tab {
+            font-size: 30px !important;
+          }
+
+          &.off {
+            @include tab {
+              display: none;
+            }
+          }
+
+          &.click {
+            cursor: pointer;
+
+            &:hover {
+              color: rgb(150, 20, 60);
+            }
+          }
+        }
+        .linkDesc {
+          display: flex;
+          flex-direction: column;
+
+          .linkTitle {
+            color: black;
+            font-size: 16px;
+            font-weight: 500;
+
+            @include tab {
+              font-size: 14px;
+            }
+          }
+
+          .linkText {
+            color: gray;
+            font-size: 14px;
+            @include tab {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

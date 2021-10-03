@@ -1,0 +1,23 @@
+$mainColor: #15023a;
+
+$mobileWidth: 768px;
+$tabWidth: 1024px;
+// $midMobileWidth: 1340px;
+
+@mixin mobile {
+    @media (max-width: #{$mobileWidth}){
+        @content
+    }
+};
+
+@mixin tab {
+    @media(max-width: #{$tabWidth}){
+        @content
+    }
+};
+
+// @mixin midMobile {
+//     @media (max-width: #{$midMobileWidth}){
+//         @content
+//     }
+// }

@@ -1,0 +1,94 @@
+@import "../../global.scss";
+
+.skills {
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+
+  h1 {
+    overflow: hidden;
+    padding: 50px 0;
+    font-size: 50px;
+
+    @include mobile {
+      padding: 30px 0 40px 0;
+      align-items: center;
+      font-size: 30px;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+    @include mobile {
+      overflow: visible;
+      height: 100vh;
+      align-items: flex-start;
+    }
+
+    .card {
+      background-color: rgb(61, 60, 60);
+      height: 350px;
+      width: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      min-width: 400px;
+      margin: 10px 10px;
+
+      @include mobile {
+        height: 270px;
+        width: 270px;
+        min-width: 0;
+      }
+
+      .box {
+        width: 280px;
+        height: 280px;
+        margin: 10px;
+        text-align: center;
+
+        @include mobile {
+          height: 80%;
+          width: 80%;
+        }
+
+        span {
+          font-size: 24px;
+          color: white;
+          font-weight: 500;
+        }
+
+        .boxIcons {
+          margin-top: 30px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          @include mobile {
+            margin-top: 10px;
+          }
+          .boxIcon {
+            height: 60px;
+            margin-left: 3%;
+            margin-top: 7%;
+
+            @include mobile {
+              height: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

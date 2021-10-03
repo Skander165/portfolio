@@ -1,0 +1,162 @@
+@import "../../global.scss";
+
+.about {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+
+  h1 {
+    overflow: hidden;
+    margin: 30px 0;
+    font-size: 50px;
+
+    
+    @include tab {
+      margin: 0;
+      font-size: 35px;
+    }
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+    @include tab {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .left {
+      flex: 1;
+      overflow: visible;
+      
+      @include tab {
+        flex: 0.8;
+      }
+      @include mobile {
+        flex: 0.6;
+      }
+      
+      .imgContainer {
+        background-color: crimson;
+        margin: 0 70px 0 0;
+        min-width: 400px;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        float: right;
+        
+        @include tab {
+          margin: 20px 0 0 0;
+          align-items: flex-end;
+          height: 250px;
+          width: 250px;
+          min-width: 250px;
+        }
+        @include mobile {
+          margin: 20px 0 0 0;
+          align-items: flex-end;
+          height: 200px;
+          width: 200px;
+          min-width: 200px;
+        }
+        
+        img {
+          height: 100%;
+        }
+      }
+    }
+    .right {
+      flex: 1.2;
+      display: flex;
+      overflow: hidden;
+
+      
+      .wrapper {
+        border: 2px crimson;
+        display: flex;
+        flex-direction: column;
+        width: 580px;
+        min-width: 580px;
+        height: 100%;
+        padding: 20px;
+        border-radius: 40px;
+        
+        
+        @include mobile {
+          min-width: 0px;
+          width: 85%;
+          margin: 10px auto;
+        }
+        
+        h2 {
+          margin-bottom: 15px;
+          
+          
+          @include tab {
+            overflow: visible;
+            margin-bottom: 10px;
+            font-size: 22px;
+            text-align: center;
+          }
+
+          @include mobile{
+            display: block;
+            height: 50px;
+          }
+          span {
+            font-size: inherit;
+            color: crimson;
+          }
+        }
+        p {
+          word-spacing: 7px;
+          font-size: 18px;
+          font-weight: 300;
+
+          @include tab {
+            word-spacing: 5px;
+            overflow: visible;
+            text-align: center;
+            font-size: 15px;
+            line-height: 20px;
+          }
+
+          @include mobile{
+            font-size: 13px;
+            font-weight: 400;
+          }
+        }
+
+        .cv {
+          padding: 20px 40px;
+          background-color: rgb(220, 20, 60);
+          width: max-content;
+          color: white;
+          margin-top: 30px;
+          font-weight: 500;
+          border-radius: 20px;
+          cursor: pointer;
+          overflow: visible;
+
+          @include tab {
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin: 10px auto -20px auto;
+          }
+
+          &:hover {
+            background-color: rgb(150, 20, 60);
+          }
+        }
+      }
+    }
+  }
+}
