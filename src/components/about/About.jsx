@@ -9,7 +9,12 @@ export default function About() {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["Web Developer", "Blockchain DApps Developer", "Freelancer", "Computer Science Student"],
+      strings: [
+        "Web Developer",
+        "Blockchain DApps Developer",
+        "Freelancer",
+        "Computer Science Student",
+      ],
     });
   }, []);
   return (
@@ -28,7 +33,7 @@ export default function About() {
               I'm Skander and I'm a <span ref={textRef}></span>
             </h2>
             <p>
-              I'm skander, 20 years old, and I'm a student in the high institute
+              I'm Skander, 20 years old, and I'm a student in the high institute
               of computer science in Tunis. I am only one year away from
               obtaining my bachelor degree in Computer Science. My academic
               journey helped me broaden my knowledge and experience in IT, But I
@@ -39,7 +44,7 @@ export default function About() {
               various online courses and earning various certificates. I also
               discovered my high potential as a group member and a leader
               through my innovative ideas and my quick thinking in stressful
-              situations allowing efficient problem solivng results. I've been
+              situations allowing efficient problem solving results. I've been
               working on various projects during last summer, which was
               admittedly stressful, but I came out of these experiences as a
               capable and reliable person, respecting deadlines and enduring
@@ -47,7 +52,7 @@ export default function About() {
               improving my time management.
             </p>
 
-            <span className="cv">Download CV</span>
+            <span className="cv">Download Resume</span>
           </div>
         </div>
       </div>

@@ -25,7 +25,7 @@ export const portfolio = [
     },
     {
       id: 5,
-      title: "Smoohies",
+      title: "Authentication with JWT",
       img:
         "./assets/smoothie.png",
     },
