@@ -12,8 +12,8 @@ export default function Skills() {
               <img src="/assets/html.svg" alt="HTML" className="boxIcon" />
               <img src="/assets/css.svg" alt="CSS" className="boxIcon" />
               <img src="/assets/javascript.svg" alt="JavaScript" className="boxIcon" />
-              <img src="/assets/php.svg" alt="PHP" className="boxIcon" />
               <img src="/assets/react.svg" alt="React.js" className="boxIcon" />
+              <img src="/assets/next.png" alt="Next.js" className="boxIcon" />
               <img src="/assets/vue.svg" alt="Vue.js" className="boxIcon" />
               <img src="/assets/node.svg" alt="Node.js" className="boxIcon" />
               <img src="/assets/solidity.svg" alt="Solidity" className="boxIcon" />
@@ -27,6 +27,7 @@ export default function Skills() {
             <div className="boxIcons">
               <img src="/assets/c.svg" alt="C" className="boxIcon" />
               <img src="/assets/c++.svg" alt="C++" className="boxIcon" />
+              <img src="/assets/php.svg" alt="PHP" className="boxIcon" />
               <img src="/assets/python.svg" alt="Python" className="boxIcon" />
               <img src="/assets/java.svg" alt="Java" className="boxIcon" />
               <img src="/assets/wordpress.svg" alt="Wordpress" className="boxIcon" />

@@ -1,6 +1,6 @@
-import "./intro.scss";
-import { init } from "ityped";
-import { useEffect, useRef } from "react";
+import './intro.scss';
+import { init } from 'ityped';
+import { useEffect, useRef } from 'react';
 
 export default function Intro() {
   const textRef = useRef();
@@ -9,7 +9,12 @@ export default function Intro() {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["Web Developer", "Blockchain DApps Developer", "Freelancer", "Computer Science Student"],
+      strings: [
+        'Web Developer',
+        'Blockchain DApps Developer',
+        'Freelancer',
+        'Computer Science Student',
+      ],
     });
   }, []);
   return (

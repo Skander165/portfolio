@@ -30,10 +30,20 @@
     &.left {
       left: 100px;
       transform: rotateY(180deg);
+      
+      @include tab {
+        left: 0px;
+
+        
+      }
     }
 
     &.right {
       right: 100px;
+
+      @include tab {
+right: 0px
+      }
     }
   }
 
@@ -43,6 +53,9 @@
     position: absolute;
     left: 0;
     transition: all 1s ease-out;
+
+
+
 
     @include mobile {
       height: 100vh;

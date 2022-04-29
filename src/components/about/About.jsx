@@ -52,7 +52,7 @@ export default function About() {
               improving my time management.
             </p>
 
-            <span className="cv">Download Resume</span>
+            <a href="assets/cv.png" download="cv"  className="cv">Download Resume</a>
           </div>
         </div>
       </div>
