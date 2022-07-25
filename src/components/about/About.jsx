@@ -1,6 +1,6 @@
-import "./about.scss";
-import { init } from "ityped";
-import { useEffect, useRef } from "react";
+import './about.scss';
+import { init } from 'ityped';
+import { useEffect, useRef } from 'react';
 
 export default function About() {
   const textRef = useRef();
@@ -10,10 +10,10 @@ export default function About() {
       backDelay: 1500,
       backSpeed: 60,
       strings: [
-        "Web Developer",
-        "Blockchain DApps Developer",
-        "Freelancer",
-        "Computer Science Student",
+        'Web Developer',
+        'Blockchain DApps Developer',
+        'Freelancer',
+        'Computer Science Student',
       ],
     });
   }, []);
@@ -33,26 +33,39 @@ export default function About() {
               I'm Skander and I'm a <span ref={textRef}></span>
             </h2>
             <p>
-              I'm Skander, 20 years old, and I'm a student at the high institute
-              of computer science in Tunis. I am only one year away from
-              obtaining my bachelor degree in Computer Science. My academic
-              journey helped me broaden my knowledge and experience in IT, But I
-              specialize essentially in Web Development and Blockchain
-              Decentralized Applications Development. This year, my main focus
-              was directed towards learning new JavaScript Frameworks and Smart
-              Contracts Development, and I accomplished this by enrolling in
-              various online courses and earning various certificates. I also
-              discovered my high potential as a group member and a leader
-              through my innovative ideas and my quick thinking in stressful
-              situations allowing efficient problem solving results. I've been
-              working on various projects during last summer, which was
-              admittedly stressful, but I came out of these experiences as a
-              capable and reliable person, respecting deadlines and enduring
-              harsh working environment while refining my performance and
-              improving my time management.
+              I'm Skander, 21 years old, and I recently obtained my bachelor
+              degree in Computer Science at the Higher Institute of Computer
+              Science in Tunis. My academic journey helped me broaden my
+              knowledge and experience in IT, But I specialize essentially in
+              Web Development and Blockchain Decentralized Applications
+              Development. This year, my main focus was directed towards
+              learning new JavaScript Frameworks and Smart Contracts
+              Development, and I accomplished this by enrolling in various
+              online courses and earning various certificates. I also discovered
+              my high potential as a group member and a leader through my
+              innovative ideas and my quick thinking in stressful situations
+              allowing efficient problem solving results. I've been recently
+              working on various projects, which was admittedly stressful, but I
+              came out of these experiences as a capable and reliable person,
+              respecting deadlines and enduring harsh working environment while
+              refining my performance and improving my time management.
             </p>
-
-            <a href="assets/cv.png" download="cv"  className="cv">Download Resume</a>
+            <div className="downloadButtons">
+              <a
+                href="CV/english/cv.pdf"
+                download="Skander Chtioui - CV"
+                className="cv"
+              >
+                Download CV - English
+              </a>
+              <a
+                href="CV/french/cv.pdf"
+                download="Skander Chtioui - CV"
+                className="cv"
+              >
+                Download CV - French
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -135,8 +135,12 @@
           }
         }
 
-        .cv {
-          padding: 20px 40px;
+        .downloadButtons{
+          display: flex;
+          gap: 10px;          
+          
+          .cv {
+            padding: 20px 40px;
           background-color: rgb(220, 20, 60);
           width: max-content;
           color: white;
@@ -159,6 +163,7 @@
           }
         }
       }
+    }
     }
   }
 }
