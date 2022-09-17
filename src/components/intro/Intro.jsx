@@ -14,6 +14,7 @@ export default function Intro() {
         'Blockchain DApps Developer',
         'Freelancer',
         'Computer Science Student',
+        "Technology Consultant"
       ],
     });
   }, []);
