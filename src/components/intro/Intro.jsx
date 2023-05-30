@@ -1,6 +1,6 @@
-import './intro.scss';
-import { init } from 'ityped';
-import { useEffect, useRef } from 'react';
+import "./intro.scss";
+import { init } from "ityped";
+import { useEffect, useRef } from "react";
 
 export default function Intro() {
   const textRef = useRef();
@@ -10,11 +10,11 @@ export default function Intro() {
       backDelay: 1500,
       backSpeed: 60,
       strings: [
-        'Web Developer',
-        'Blockchain DApps Developer',
-        'Freelancer',
-        'Computer Science Student',
-        "Technology Consultant"
+        "Web Developer",
+        "Blockchain DApps Developer",
+        "Freelancer",
+        "Computer Science Student",
+        "Technology Consultant",
       ],
     });
   }, []);
@@ -22,7 +22,7 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/mee.jpg" alt="" />
+          <img src="assets/profile2.jpg" alt="" />
         </div>
       </div>
       <div className="right">
